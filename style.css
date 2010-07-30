@@ -1,0 +1,516 @@
+/*
+Theme Name: WP-Kankie
+Theme URI: http://www.chriskankiewicz.com
+Description: Two column, orange, black and gray wordpress theme.
+Version: 1.0
+Author: Chris Kankiewicz
+Author URI: http://www.chriskankiewicz.com
+Tags: orange, black, gray, fixed width, two columns, widgets
+*/
+
+/* -------------------------------------------------------------------- */
+/* -----| RESET.CSS |-------------------------------------------------- */
+/* -------------------------------------------------------------------- */
+
+/* http://developer.yahoo.com/yui/reset/ */
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,blockquote,th,td {
+    margin:0;
+    padding:0;
+}
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+fieldset,img { 
+    border:0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+    font-style:normal;
+    font-weight:normal;
+}
+ol,ul {
+    list-style:none;
+}
+caption,th {
+    text-align:left;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-size:100%;
+    font-weight:normal;
+}
+q:before,q:after {
+    content:'';
+}
+abbr,acronym { border:0;
+}
+
+/* -------------------------------------------------------------------- */
+/* -----| BASE.CSS |--------------------------------------------------- */
+/* -------------------------------------------------------------------- */
+
+/* http://developer.yahoo.com/yui/base/ */
+
+/* base.css, part of YUI's CSS Foundation */
+h1 {
+    /*18px via YUI Fonts CSS foundation*/
+    font-size:138.5%;  
+}
+h2 {
+    /*16px via YUI Fonts CSS foundation*/
+    font-size:123.1%; 
+}
+h3 {
+    /*14px via YUI Fonts CSS foundation*/
+    font-size:108%;  
+}
+h1,h2,h3 {
+    /* top & bottom margin based on font size */
+    margin:1em 0;
+}
+h1,h2,h3,h4,h5,h6,strong {
+    /*bringing boldness back to headers and the strong element*/
+    font-weight:bold; 
+}
+abbr,acronym {
+    /*indicating to users that more info is available */
+    border-bottom:1px dotted #000;
+    cursor:help;
+} 
+em {
+    /*bringing italics back to the em element*/
+    font-style:italic;
+}
+blockquote,ul,ol,dl {
+    /*giving blockquotes and lists room to breath*/
+    margin:1em;
+}
+ol,ul,dl {
+    /*bringing lists on to the page with breathing room */
+    margin-left:2em;
+}
+ol li {
+    /*giving OL's LIs generated numbers*/
+    list-style: decimal outside;    
+}
+ul li {
+    /*giving UL's LIs generated disc markers*/
+    list-style: disc outside;
+}
+dl dd {
+    /*giving UL's LIs generated numbers*/
+    margin-left:1em;
+}
+th,td {
+    /*borders and padding to make the table readable*/
+    border:none;
+    padding:0;
+}
+th {
+    /*distinguishing table headers from data cells*/
+    font-weight:bold;
+    text-align:center;
+}
+caption {
+    /*coordinated marking to match cell's padding*/
+    margin-bottom:.5em;
+    /*centered so it doesn't blend in to other content*/
+    text-align:center;
+}
+p,fieldset,table {
+    /*so things don't run into each other*/
+    margin-bottom:1em;
+}
+
+
+/* -------------------------------------------------------------------- */
+/* -----| GENERAL |---------------------------------------------------- */
+/* -------------------------------------------------------------------- */
+
+html {
+    font-size: 100%;
+}
+
+body {
+    background: #333 url(images/bg.png) repeat top left;
+    color: #333;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: .85em;
+}
+
+#pageWrap {
+	background-color: #FFF;
+	margin: 20px auto;
+	padding: 20px;
+	width: 860px;
+}
+
+a {
+	color: #FF5B00;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #FF5B00;
+	text-decoration: underline;
+}
+
+/* -------------------------------------------------------------------- */
+/* -----| HEADER |----------------------------------------------------- */
+/* -------------------------------------------------------------------- */
+
+#siteHeader {
+	background-color: #FF5B00;
+	color: #FFF;
+	padding: 20px;
+}
+
+#siteTitle {
+	color: #FFF;
+	font-size: 2.5em;
+	font-weight: bold;
+	letter-spacing: 2px;
+	text-decoration: none;
+}
+
+#siteTag {
+	font-size: 1.1em;
+	margin: 12px 0 0;
+}
+
+
+/* -------------------------------------------------------------------- */
+/* -----| NAVIGATION |------------------------------------------------- */
+/* -------------------------------------------------------------------- */
+
+#siteNavigationWrap {
+	background: #555 url(images/nav-bg.png) no-repeat -50px top;
+	color: #FFF;
+	margin: 0 0 20px;
+	padding-top: 10px;
+}
+
+#siteNavigation {
+	float: left;
+	margin: 0;
+}
+
+#siteNavigation li {
+	float: left;
+	list-style: none;
+	position: relative;
+}
+
+#siteNavigation li a {
+	color: #FFF;
+	display: block;
+	font-size: .8em;
+	padding: 10px 15px;
+	text-decoration: none;
+}
+
+#siteNavigation li:hover a {
+	background-color: #444;
+}
+
+/* SUB NAVIGATION */
+
+#siteNavigation li ul.children {
+    background-color: #444;
+    display: none;
+    float: none;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+}
+
+#siteNavigation li:hover ul.children {
+    display: block;
+}
+
+#siteNavigation li ul.children li {
+    display: block;
+    float: none;
+    margin: 0;
+}
+
+#siteNavigation li ul.children li a {
+    display: block;
+    white-space: nowrap;
+}
+
+#siteNavigation li ul.children li a:hover {
+    background-color: #333;
+    color: #FFF;
+}
+
+#siteNavigation li:hover ul.children li a {
+    background-image: none;
+}
+
+/* FEED ICON */
+
+#feedIcon {
+    background: transparent url(images/icons/feed.png) no-repeat center center;
+    display: block;
+    float: right;
+    font-size: .8em;
+    padding: 10px;
+    text-decoration: none;
+    width: 16px;
+}
+
+#feedIcon:hover {
+	background-color: #444;
+	text-decoration: none;
+}
+
+
+/* -------------------------------------------------------------------- */
+/* -----| CONTENT |---------------------------------------------------- */
+/* -------------------------------------------------------------------- */
+
+#content {
+	float: left;
+	width: 590px;
+}
+
+#content h1 {
+	font-size: 1.6em;
+	margin: 0 0 20px;
+}
+
+#content h2 {
+	font-size: 1.4em;
+	margin: 0 0 20px;
+}
+
+#content .postTitle {
+	margin: 0;
+}
+
+#content .postTitle a {
+	color: #333;
+}
+
+#content .postTitle a:hover {
+	color: #FF5B00;
+}
+
+#content  .postInfo {
+	color: #888;
+	font-size: .8em;
+	margin: 3px 0 20px;
+}
+
+#content .postText {
+    font-size: .9em;
+	line-height: 1.4em;
+	
+}
+
+#content .postText p {
+    margin: 20px 0;
+}
+
+ #content .postText ul, #content .postText ol {
+    margin: 20px 30px;
+}
+
+
+/* -------------------------------------------------------------------- */
+/* -----| POST META DATA |--------------------------------------------- */
+/* -------------------------------------------------------------------- */
+
+
+.postMetaData {
+	background-color: #DEDEDE;
+	color: #333;
+	margin: 20px 0;
+	padding: 20px;
+}
+
+.postMetaData .postTags {
+	background: transparent url(images/icons/tag_green.png) no-repeat left center;
+	font-size: .9em;
+	margin-bottom: 10px;
+	padding: 2px 0 2px 20px;
+}
+
+.postMetaData .postCategory {
+	background: transparent url(images/icons/application_view_list.png) no-repeat left center;
+	padding-left: 20px;
+}
+
+.postMetaData .post-edit-link {
+	background: transparent url(images/icons/page_white_edit.png) no-repeat left center;
+	padding-left: 20px;
+}
+
+.postMetaData .postComments{
+	background: transparent url(images/icons/comments.png) no-repeat left center;
+	padding-left: 20px;
+}
+
+
+/* -------------------------------------------------------------------- */
+/* -----| SIDEBAR |---------------------------------------------------- */
+/* -------------------------------------------------------------------- */
+
+#sideBar {
+	float: right;
+	width: 250px;
+}
+
+#sideBar ul {
+    margin: 0;
+    padding: 0;
+}
+
+#sideBar ul li {
+    list-style: none;
+    margin: 0 0 20px;
+}
+
+#sideBar ul li h2 {
+    border-bottom: 3px solid #DEDEDE;
+    font-size: 1.1em;
+    margin: 0;
+    padding: 0 0 2px;
+}
+
+#sideBar ul li ul {
+    border-bottom: 2px solid #DEDEDE;
+    margin: 0;
+    padding: 0;
+}
+
+#sideBar ul li ul li {
+    border-bottom: 1px solid #DEDEDE;
+    font-size: .9em;
+    margin: 0;
+    padding: 2px 3px;
+}
+
+#sideBar ul li select {
+    margin: 3px 0;
+    width: 100%;
+}
+
+#siteSearch {
+	background-color: #DEDEDE;
+	margin-bottom: 20px;
+	padding: 10px;
+	position: relative;
+}
+
+#siteSearchBox {
+    background: #FFF url(images/icons/magnifier.png) no-repeat 3px center;
+	border: 1px solid #555;
+	float: left;
+	font-size: 12px;
+	height: 18px;
+	padding: 4px 4px 4px 22px;
+	width: 167px;
+}
+
+#siteSearchButton {
+	background-color: #555;
+	border: none;
+	color: #FFF;
+	cursor: pointer;
+	height: 28px;
+	float: left;
+	padding: 3px;
+	width: 35px;
+}
+
+
+/* -------------------------------------------------------------------- */
+/* -----| FOOTER |---------------------------------------------------- */
+/* -------------------------------------------------------------------- */
+
+#siteFooter {
+    border-top: 1px dotted #999;
+    color: #666;
+    font-size: .8em;
+    padding-top: 20px;
+}
+
+#siteFooter a {
+    color: #666;
+    text-decoration: none;
+}
+
+#siteFooter a:hover {
+    text-decoration: underline;
+}
+
+.footerBox {
+    float: left;
+	line-height: 1.5em;
+    width: 205px !important;
+}
+
+.footerBox.left {
+    padding-right: 7px;
+}
+
+.footerBox.center {
+    padding: 0 7px;
+}
+
+.footerBox.right {
+    color: #999;
+    float: right;
+    padding-left: 5px;
+    text-align: right;
+}
+
+.footerBox.right a {
+    color: #999 !important;
+}
+
+.footerBox ul {
+    margin: 0 .75em;
+}
+
+.footerBox ul li {
+    list-style: none;
+}
+
+
+/* -------------------------------------------------------------------- */
+/* -----| MISCELLANEOUS |---------------------------------------------- */
+/* -------------------------------------------------------------------- */
+
+.hidden {
+    display: none;
+}
+
+.left {
+    float: left;
+    width: auto;
+}
+
+.right {
+    float: right;
+    width: auto;
+}
+
+/* --- CLEAR FIX --- */
+
+.clearfix:after {
+    content: ".";
+    display:block;
+    height:0;
+    clear:both;
+    visibility:hidden;}
+.clearfix {display:inline-block;}
+/* Hides from IE-mac \*/
+* html .clearfix { height:1%;}
+.clearfix {display:block;}
+/* End hide from IE-mac */

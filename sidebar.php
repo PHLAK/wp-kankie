@@ -1,14 +1,6 @@
     <div id="sideBar">
         <ul>
             <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar() ) : ?>
-    
-                <? /*
-                <div id="siteSearch" class="clearfix">
-                    <input type="text" id="siteSearchBox" />
-                    <input type="submit" value="Go" id="siteSearchButton" />
-                </div>
-                */ ?>
-            
                 <li>
                     <h2>Recent Posts</h2>
                     <ul>
@@ -42,7 +34,6 @@
                         <?php wp_meta(); ?>
                     </ul>
                 </li>
-                
             <?php endif; ?>
         </ul>
     </div>

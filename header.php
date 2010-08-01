@@ -14,7 +14,7 @@
     
         <div id="siteHeader" class="clearfix">
             <a href="<?php echo(bloginfo('url')); ?>" title="<?php bloginfo('name'); ?> - <?php bloginfo('description'); ?>" id="siteTitle" class="left"><?php bloginfo('name'); ?></a>
-            <div id="siteTag" class="right">Web Design &bull; Graphic Design &bull; Code</div>
+            <div id="siteTag" class="right"><?php bloginfo('description'); ?></div>
         </div>
         
         <div id="siteNavigationWrap" class="clearfix">

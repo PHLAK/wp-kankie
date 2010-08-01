@@ -24,7 +24,7 @@
                 </ul>
             </div>
             <div class="footerBox right">
-                &copy; <?php date("Y"); ?> <a href="<?php echo(bloginfo('url')); ?>" title="<?php bloginfo('name'); ?> - <?php bloginfo('description'); ?>"><?php bloginfo('name'); ?></a>
+                &copy; <?php echo date('Y'); ?> <a href="<?php echo(bloginfo('url')); ?>" title="<?php bloginfo('name'); ?> - <?php bloginfo('description'); ?>"><?php bloginfo('name'); ?></a>
             </div>
         </div>
         

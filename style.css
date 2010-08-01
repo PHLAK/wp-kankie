@@ -288,6 +288,21 @@ a:hover {
 	margin: 0 0 20px;
 }
 
+#content h3 {
+	font-size: 1.2em;
+	margin: 0 0 20px;
+}
+
+#content h4 {
+	font-size: 1em;
+	margin: 0 0 20px;
+}
+
+#content h5 {
+	font-size: .9em;
+	margin: 0 0 20px;
+}
+
 #content .postTitle {
 	margin: 0;
 }
@@ -400,32 +415,39 @@ a:hover {
     width: 100%;
 }
 
-#siteSearch {
+#searchform {
 	background-color: #DEDEDE;
 	margin-bottom: 20px;
+	float: right;
+	margin-top: -20px;
 	padding: 10px;
 	position: relative;
 }
 
-#siteSearchBox {
+#searchform label {
+    display: none;
+}
+
+#searchform #s {
     background: #FFF url(images/icons/magnifier.png) no-repeat 3px center;
 	border: 1px solid #555;
 	float: left;
 	font-size: 12px;
 	height: 18px;
 	padding: 4px 4px 4px 22px;
-	width: 167px;
+	width: 152px;
 }
 
-#siteSearchButton {
+#searchform #searchsubmit {
 	background-color: #555;
 	border: none;
 	color: #FFF;
 	cursor: pointer;
 	height: 28px;
 	float: left;
-	padding: 3px;
-	width: 35px;
+	font-size: 12px;
+	padding: 4px;
+	width: 50px;
 }
 
 

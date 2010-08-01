@@ -191,18 +191,18 @@ a:hover {
 	padding-top: 10px;
 }
 
-#siteNavigationWrap .menu ul {
+#siteNavigationWrap ul {
 	float: left;
 	margin: 0;
 }
 
-#siteNavigationWrap .menu ul li {
+#siteNavigationWrap  ul li {
 	float: left;
 	list-style: none;
 	position: relative;
 }
 
-#siteNavigationWrap .menu ul li a {
+#siteNavigationWrap ul li a {
 	color: #FFF;
 	display: block;
 	font-size: .8em;
@@ -210,13 +210,13 @@ a:hover {
 	text-decoration: none;
 }
 
-#siteNavigationWrap .menu ul li:hover a {
+#siteNavigationWrap ul li:hover a {
 	background-color: #444;
 }
 
 /* SUB NAVIGATION */
 
-#siteNavigationWrap .menu ul li ul.children {
+#siteNavigationWrap ul li ul.children {
     background-color: #444;
     display: none;
     float: none;
@@ -227,27 +227,27 @@ a:hover {
     top: 100%;
 }
 
-#siteNavigationWrap .menu ul li:hover ul.children {
+#siteNavigationWrap ul li:hover ul.children {
     display: block;
 }
 
-#siteNavigationWrap .menu ul li ul.children li {
+#siteNavigationWrap ul li ul.children li {
     display: block;
     float: none;
     margin: 0;
 }
 
-#siteNavigationWrap .menu ul li ul.children li a {
+#siteNavigationWrap ul li ul.children li a {
     display: block;
     white-space: nowrap;
 }
 
-#siteNavigationWrap .menu ul li ul.children li a:hover {
+#siteNavigationWrap ul li ul.children li a:hover {
     background-color: #333;
     color: #FFF;
 }
 
-#siteNavigationWrap .menu ul li:hover ul.children li a {
+#siteNavigationWrap ul li:hover ul.children li a {
     background-image: none;
 }
 

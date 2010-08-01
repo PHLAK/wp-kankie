@@ -333,7 +333,7 @@ a:hover {
 }
 
  #content .postText ul, #content .postText ol {
-    margin: 20px 30px;
+    margin: 10px 30px;
 }
 
 
@@ -455,6 +455,46 @@ a:hover {
 	width: 55px;
 }
 
+.widget_calendar h2 {
+    display: none !important;
+}
+
+#wp-calendar {
+    clear: both;
+    width: 100%;
+}
+
+#wp-calendar caption {
+    background-color: #DEDEDE;
+    color: #333;
+    font-weight: bold;
+    padding: 5px;
+    
+}
+
+#wp-calendar tbody td {
+    border: 1px solid #DEDEDE;
+}
+
+#next {
+    text-align: right;
+}
+
+#prev a, #next a {
+    background-color: #555;
+    color: #FFF;
+    display: inline-block;
+    font-size: .85em;
+    margin-top: 5px;
+    margin-right: 2px;
+    padding: 4px 6px;
+    text-decoration: none;
+}
+
+#prev a:hover, #next a:hover  {
+    background-color: #444;
+}
+
 
 /* -------------------------------------------------------------------- */
 /* -----| FOOTER |---------------------------------------------------- */
@@ -513,6 +553,21 @@ a:hover {
 /* -------------------------------------------------------------------- */
 /* -----| MISCELLANEOUS |---------------------------------------------- */
 /* -------------------------------------------------------------------- */
+
+hr {
+    border: 0;
+    color: #DEDEDE;
+    background-color: #DEDEDE;
+    height: 2px;
+}
+
+code {
+    background: #555;
+    display: block;
+    color: #FFF;
+    font-size: 11px;
+    padding: 20px;
+}
 
 .hidden {
     display: none;

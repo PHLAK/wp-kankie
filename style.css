@@ -259,6 +259,7 @@ a:hover {
     float: right;
     font-size: .8em;
     padding: 10px;
+    text-align: center;
     text-decoration: none;
     width: 16px;
 }
@@ -335,6 +336,10 @@ a:hover {
     margin: 20px 30px;
 }
 
+
+#pagination {
+    margin-bottom: 20px;
+}
 
 /* -------------------------------------------------------------------- */
 /* -----| POST META DATA |--------------------------------------------- */

@@ -435,7 +435,7 @@ a:hover {
 	font-size: 12px;
 	height: 18px;
 	padding: 4px 4px 4px 22px;
-	width: 152px;
+	width: 147px;
 }
 
 #searchform #searchsubmit {
@@ -445,9 +445,9 @@ a:hover {
 	cursor: pointer;
 	height: 28px;
 	float: left;
-	font-size: 12px;
-	padding: 4px;
-	width: 50px;
+	font-size: 11px;
+	padding: 0 4px;
+	width: 55px;
 }
 
 

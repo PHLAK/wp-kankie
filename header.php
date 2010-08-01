@@ -18,9 +18,7 @@
         </div>
         
         <div id="siteNavigationWrap" class="clearfix">
-            <ul id="siteNavigation">
-                <?php wp_list_pages('title_li='); ?>
-            </ul>
+            <?php wp_nav_menu(); ?>
             
             <a href="<?php bloginfo('rss2_url'); ?>" id="feedIcon">&nbsp;</a>
         </div>

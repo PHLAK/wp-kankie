@@ -216,7 +216,7 @@ a:hover {
 
 /* SUB NAVIGATION */
 
-#siteNavigationWrap ul li ul.children {
+#siteNavigationWrap ul li ul {
     background-color: #444;
     display: none;
     float: none;
@@ -227,27 +227,27 @@ a:hover {
     top: 100%;
 }
 
-#siteNavigationWrap ul li:hover ul.children {
+#siteNavigationWrap ul li:hover ul {
     display: block;
 }
 
-#siteNavigationWrap ul li ul.children li {
+#siteNavigationWrap ul li ul li {
     display: block;
     float: none;
     margin: 0;
 }
 
-#siteNavigationWrap ul li ul.children li a {
+#siteNavigationWrap ul li ul li a {
     display: block;
     white-space: nowrap;
 }
 
-#siteNavigationWrap ul li ul.children li a:hover {
+#siteNavigationWrap ul li ul li a:hover {
     background-color: #333;
     color: #FFF;
 }
 
-#siteNavigationWrap ul li:hover ul.children li a {
+#siteNavigationWrap ul li:hover ul li a {
     background-image: none;
 }
 

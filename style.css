@@ -528,6 +528,14 @@ a:hover {
     width: auto;
 }
 
+.alignright {
+    float: right;
+}
+
+.alignleft {
+    float: left;
+}
+
 /* --- CLEAR FIX --- */
 
 .clearfix:after {

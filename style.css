@@ -254,7 +254,7 @@ a:hover {
 /* FEED ICON */
 
 #feedIcon {
-    background: transparent url(images/icons/feed.png) no-repeat center center;
+    background: transparent url(images/icons/rss_16.png) no-repeat center center;
     display: block;
     float: right;
     font-size: .8em;

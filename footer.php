@@ -1,38 +1,27 @@
         <div id="siteFooter" class="clearfix">
         
-            <?php get_sidebar( 'footer' ); ?>
+                <ul class="footerBox left">
+                    <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar(2) ) : ?>
+                    <?php endif; ?>
+                </ul>
+        
+                <ul class="footerBox center">
+                    <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar(3) ) : ?>
+                    <?php endif; ?>
+                </ul>
+        
+                <ul class="footerBox center">
+                    <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar(4) ) : ?>
+                    <?php endif; ?>
+                </ul>
             
-            <div class="footerBox left">
-                <h4>Footer Title</h4>
-                <ul>
-                    <li><a href="#">Footer Link</a></li>
-                    <li><a href="#">Footer Link</a></li>
-                    <li><a href="#">Footer Link</a></li>
-                </ul>
-            </div>
-            <div class="footerBox center">
-                <h4>Footer Title</h4>
-                <ul>
-                    <li><a href="#">Footer Link</a></li>
-                    <li><a href="#">Footer Link</a></li>
-                    <li><a href="#">Footer Link</a></li>
-                </ul>
-            </div>
-            <div class="footerBox center">
-                <h4>Footer Title</h4>
-                <ul>
-                    <li><a href="#">Footer Link</a></li>
-                    <li><a href="#">Footer Link</a></li>
-                    <li><a href="#">Footer Link</a></li>
-                </ul>
-            </div>
             <div class="footerBox right">
                 &copy; <?php echo date('Y'); ?> <a href="<?php echo(bloginfo('url')); ?>" title="<?php bloginfo('name'); ?> - <?php bloginfo('description'); ?>"><?php bloginfo('name'); ?></a>
             </div>
+            
         </div>
         
     </div>
-    
     
     <?php wp_footer(); ?>
     

@@ -1,6 +1,11 @@
     <div id="sideBar">
         <ul>
             <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar() ) : ?>
+            
+                <li id="search" class="widget-container widget_search">
+                    <?php get_search_form(); ?>
+                </li>
+            
                 <li>
                     <h2>Recent Posts</h2>
                     <ul>
